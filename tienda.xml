@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="tienda.xslt" type="text/xsl"?>
+<tienda NIF="A -3900001- 3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="./tienda.xsd">
+<biblioteca>
+    <nombre>Biblioteca X</nombre>
+    <company>Biblioteca S.L </company>
+    <url>www.biblioteca.com</url>
+
+<libros>
+    <!-- el id lo declaramos como un atributo USE EL  -->
+    <!-- que puede aparecer o no pero si aparece tiene que tener el id indicado -->
+    <libro id="2">
+        <!-- <datos_comun> -->
+            <nombre>Halloween</nombre>
+        <!-- Formato que inventado 4 numeros y 2 simbolos no alfanumericos -->
+            <codigo>BBB0001$%</codigo>
+        <!-- formato fecha -->
+            <fecha>2002-09-24</fecha>
+        <!-- </datos_comun> -->
+        <!-- formato precio -->
+        <precio>12.99</precio>
+        <!--Tenemos que elegir entre tres categorias -->
+        <categoria>Terror</categoria>
+        <!-- nos indica el numero de unidades disponibles -->
+        <unidadesDisponibles>45</unidadesDisponibles>
+    </libro>   
+    <libro id="3">
+        <!-- <datos_comun> -->
+            <nombre>Pesadilla en Elm Street</nombre>
+        <!-- Formato que inventado 4 numeros y 2 simbolos no alfanumericos -->
+            <codigo>AAA0002#$</codigo>
+        <!-- formato fecha -->
+            <fecha>1984-10-31</fecha>
+        <!-- </datos_comun> -->
+        <!-- formato precio -->
+        <precio>16.99</precio>
+        <!--Tenemos que elegir entre tres categorias -->
+        <categoria>Terror</categoria>
+        <!-- nos indica el numero de unidades disponibles -->
+        <unidadesDisponibles>45</unidadesDisponibles>
+    </libro>
+    <libro id="4">
+        <!-- <datos_comun> -->
+            <nombre>El juego de Ender</nombre>
+        <!-- Formato que inventado 4 numeros y 2 simbolos no alfanumericos -->
+            <codigo>JJJ0003$€</codigo>
+        <!-- formato precio -->
+            <fecha>1985-09-24</fecha>
+        <!-- </datos_comun> -->
+        <precio>10.40</precio>
+        <!-- formato fecha -->
+        <!--Tenemos que elegir entre tres categorias -->
+        <categoria>Ficción</categoria>
+        <!-- nos indica el numero de unidades disponibles -->
+        <unidadesDisponibles>45</unidadesDisponibles>
+    </libro>
+    <libro id="5">
+        <!-- <datos_comun> -->
+            <nombre>la ovejita que vino a cenar </nombre>
+        <!-- Formato que inventado 4 numeros y 2 simbolos no alfanumericos -->
+            <codigo>MSN0010$$</codigo>
+        <!-- formato fecha -->
+            <fecha>2006-08-07</fecha>
+        <!-- </datos_comun> -->
+        <!-- formato precio -->
+        <precio>15.22</precio>
+        <!--Tenemos que elegir entre tres categorias -->
+        <categoria>Infantil</categoria>
+        <!-- nos indica el numero de unidades disponibles -->
+        <unidadesDisponibles>45</unidadesDisponibles>
+    </libro>
+</libros>
+<clientes>
+    <cliente identificador="A">
+        <!-- <datos_comun> -->
+            <nombre>Juan</nombre>
+        <!-- Formato 3 letras, 4 numeros, 1 simoblo -->
+            <codigo>Fab3456#$</codigo>
+            <fecha>2022-05-20</fecha>
+            <!-- </datos_comun> -->
+        <apellidos>
+            <!-- solo podemos elegir entre el primer apellido o el segundo  -->
+            <!-- <primerapellido>Snchaez</primerapellido> -->
+            <segundoapellido>Pérez</segundoapellido>
+        </apellidos>
+        <!-- restringimimos la edad entre los 18 años a los 100 años y solo valores posistivos-->
+        <edad>25</edad>
+        <email>Ejempl12@gmail.com</email>
+        <telefono>(+034)695040750</telefono>
+        <direccion>calle sin número</direccion>
+    </cliente>
+    <cliente identificador="B">
+        <!-- <datos_comun> -->
+            <nombre>Juan</nombre>
+        <!-- Formato 3 letras, 4 numeros, 1 simoblo -->
+            <codigo>Fab3456#%</codigo>
+            <fecha>2022-05-20</fecha>
+        <!-- </datos_comun> -->
+        <apellidos>
+            <!-- solo podemos elegir entre el primer apellido o el segundo  -->
+            <primerapellido>Snchaez</primerapellido>
+            <!-- <segundoapellido>Pérez</segundoapellido> -->
+        </apellidos>
+        <!-- restringimimos la edad entre los 18 años a los 100 años y solo valores posistivos-->
+        <edad>27</edad>
+        <email>Ejempl12@gmail.com</email>
+        <telefono>(+034)695040750</telefono>
+        <direccion>calle sin número</direccion>
+    </cliente>
+    <cliente identificador="C">
+        <!-- <datos_comun> -->
+            <nombre>Pedro</nombre>
+        <!-- Formato 3 letras, 4 numeros, 1 simoblo -->
+            <codigo>Mss0002#$</codigo>
+            <fecha>2022-05-18</fecha>
+            <!-- </datos_comun> -->
+        <apellidos>
+            <!-- solo podemos elegir entre el primer apellido o el segundo  -->
+            <primerapellido>Snchaez</primerapellido>
+            <!-- <segundoapellido>Pérez</segundoapellido> -->
+        </apellidos>
+        <!-- restringimimos la edad entre los 18 años a los 100 años y solo valores posistivos-->
+        <edad>18</edad>
+        <email>perdsdaas@gmail.com</email>
+        <telefono>(+044)994574122</telefono>
+        <direccion>calle sin número </direccion>
+    </cliente>
+    <cliente identificador="D">
+        <!-- <datos_comun> -->
+            <nombre>Maribel</nombre>
+        <!-- Formato 3 letras, 4 numeros, 1 simoblo -->
+            <codigo>asL0004%$</codigo>
+            <fecha>2022-05-11</fecha>
+        <!-- </datos_comun> -->
+        <apellidos>
+            <!-- solo podemos elegir entre el primer apellido o el segundo  -->
+            <!-- <primerapellido>Snchaez</primerapellido> -->
+            <segundoapellido>Pérez</segundoapellido>
+        </apellidos>
+        <!-- restringimimos la edad entre los 18 años a los 100 años y solo valores posistivos-->
+        <edad>23</edad>
+        <email>Ejempl12@gmail.com</email>
+        <telefono>(+593)075326591</telefono>
+        <direccion>calle sin número</direccion>
+    </cliente>
+</clientes>
+</biblioteca>
+</tienda>
